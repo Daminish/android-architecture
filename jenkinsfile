@@ -1,0 +1,10 @@
+pipeline {
+    agent { gradle 'gradle-4.3.1' }
+    stages {
+        stage('build') {
+            steps {
+                sh 'gradle --version'
+            }
+        }
+    }
+}
